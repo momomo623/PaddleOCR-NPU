@@ -1,0 +1,18 @@
+fastapi>=0.104.0
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+pydantic>=2.0.0
+numpy>=1.24.0
+opencv-python>=4.8.0
+Pillow>=10.0.0
+aiofiles>=23.0.0
+
+shapely
+pillow
+pyclipper
+opencv-python >= 4.1.0
+scikit-image
+torchvision==0.16.0
+numpy<2.0
+
+
