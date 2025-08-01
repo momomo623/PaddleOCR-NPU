@@ -74,10 +74,13 @@ python start_server.py --disable_angle_cls
 
 ```bash
 # 单图识别 (默认NPU加速)
-python quick_ocr.py --image_dir ./test_image.jpg
+python quick_ocr.py --image_dir doc/imgs/
 
-# 批量处理 (默认NPU加速)
-python quick_ocr.py --image_dir ./images_folder/
+# 或指定模型路径
+python quick_ocr.py --image_dir doc/imgs/ \
+  --det_model_path ./ptocr_v5_server_det.pth \
+  --rec_model_path ./ptocr_v5_server_rec.pth \
+  --cls_model_path ./ch_ptocr_mobile_v2.0_cls_infer.pth
 ```
 
 其他方式：[模型预测](./doc/inference.md)
