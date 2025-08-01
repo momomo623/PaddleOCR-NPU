@@ -206,16 +206,3 @@ print(result["result"]["markdown_result"])
 - 华为昇腾 - NPU计算支持
 
 **⭐ 如果这个项目对你有帮助，请给个Star支持一下！**
-
-
-8
-python start_server.py --port 8012 \
-  --det_model_path /work/master/paddleocr2pytorch/ptocr_v5_server_det.pth \
-  --rec_model_path /work/master/paddleocr2pytorch/ptocr_v5_server_rec.pth \
-  --cls_model_path /work/master/paddleocr2pytorch/ch_ptocr_mobile_v2.0_cls_infer.pth
-
-
-python quick_ocr.py --image_dir doc/imgs/ \
-  --det_model_path /work/master/paddleocr2pytorch/ptocr_v5_server_det.pth \
-  --rec_model_path /work/master/paddleocr2pytorch/ptocr_v5_server_rec.pth \
-  --cls_model_path /work/master/paddleocr2pytorch/ch_ptocr_mobile_v2.0_cls_infer.pth
