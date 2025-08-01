@@ -57,19 +57,6 @@ pip3 install torch_npu-2.1.0.post10-cp310-cp310-manylinux_2_17_aarch64.manylinux
 
 请下载并将其放入`models`文件夹下。
 
-### 启动服务
-
-```bash
-# 基础启动（默认端口8011，所有参数使用默认值）
-python start_server.py
-
-# 自定义端口和地址
-python start_server.py --port 8012
-
-# 禁用方向分类模型（提升速度，减少显存）
-python start_server.py --disable_angle_cls
-```
-
 ### 快速验证脚本
 
 ```bash
@@ -88,10 +75,27 @@ python quick_ocr.py --image_dir doc/imgs/ \
 ### 效果展示
 
 **处理日志示例**
+
 ![处理日志](doc/log.png)
 
 **可视化结果示例**
+
 ![可视化结果](doc/vis_11.jpg)
+
+### 启动服务
+
+```bash
+# 基础启动（默认端口8011，所有参数使用默认值）
+python start_server.py
+
+# 自定义端口和地址
+python start_server.py --port 8012
+
+# 禁用方向分类模型（提升速度，减少显存）
+python start_server.py --disable_angle_cls
+```
+
+
 
 ## 🌐 API接口
 
